@@ -93,9 +93,9 @@ hi Constant     ctermfg=131 guifg=#af5f5f
 hi Identifier   ctermfg=98  guifg=#875fdf                           cterm=none
 hi Ignore       ctermfg=247 guifg=#9f9f9f
 hi Number       ctermfg=95  guifg=#8f4f47
-hi PreProc      ctermfg=65  guifg=#5f875f
+hi PreProc      ctermfg=65  guifg=#5f875f                           cterm=bold gui=bold
 hi Special      ctermfg=132 guifg=#af5f87
-hi Statement    ctermfg=68  guifg=#5f87df                           cterm=none gui=none
+hi Statement    ctermfg=68  guifg=#5f87df                           cterm=bold gui=bold
 hi Type         ctermfg=60  guifg=#5f5f87                           cterm=none gui=none
 
 "" Special {{{2
@@ -103,11 +103,11 @@ hi Type         ctermfg=60  guifg=#5f5f87                           cterm=none g
 hi diffAdded    ctermfg=150 guifg=#afdf87
 hi diffRemoved  ctermfg=174 guifg=#df8787
 """ vimdiff {{{3
-hi diffAdd      ctermfg=bg  guifg=bg      ctermbg=151 guibg=#afdfaf
+hi diffAdd      ctermfg=0  guifg=#000000      ctermbg=151 guibg=#afdfaf
 "hi diffDelete   ctermfg=bg  guifg=bg      ctermbg=186 guibg=#dfdf87 cterm=none gui=none
-hi diffDelete   ctermfg=bg  guifg=bg      ctermbg=246 guibg=#949494 cterm=none gui=none
-hi diffChange   ctermfg=bg  guifg=bg      ctermbg=181 guibg=#dfafaf
-hi diffText     ctermfg=bg  guifg=bg      ctermbg=174 guibg=#df8787 cterm=none gui=none
+hi diffDelete   ctermfg=0  guifg=#000000      ctermbg=246 guibg=#949494 cterm=none gui=none
+hi diffChange   ctermfg=0  guifg=#000000      ctermbg=181 guibg=#dfafaf
+hi diffText     ctermfg=0  guifg=#000000      ctermbg=174 guibg=#df8787 cterm=none gui=none
 """ HTML {{{3
 " hi htmlTag      ctermfg=146  guifg=#505020
 " hi htmlEndTag   ctermfg=146  guifg=#505020
@@ -150,4 +150,4 @@ hi treeLink       ctermfg=139 guifg=#af87af
 " sign define both        linehl=currentLine text=>>
 " sign define empty       linehl=empty
 
-hi SignColumn term=standout ctermfg=236 guifg=#303030 ctermbg=7 guibg=#c0c0c0
+hi SignColumn term=standout ctermfg=236 guifg=#303030 ctermbg=bg guibg=bg
